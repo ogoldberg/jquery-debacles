@@ -22,31 +22,66 @@
 		</script>
 		<style type="text/css">
 			/*demo page css*/
-			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
-			.demoHeaders { margin-top: 2em; }
-			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
-			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
-			ul#icons {margin: 0; padding: 0;}
-			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
-			ul#icons span.ui-icon {float: left; margin: 0 4px;}
-                        .bunghole { color: blue; }
+			body{ font: 100% "Trebuchet MS", sans-serif; margin: 50px;}
                         .horizontal {
                             float:left;
                             list-style:none;
-                            margin:10px;
+                            margin:40px;
+                        }
+			ul.icons {margin: 0; padding: 0;}
+                        ul.icons li span {
+                            margin: 2px; 
+                            position: relative; 
+                            cursor: pointer; 
+                            /*
+                            padding: 4px 0; 
+                            list-style: none;
+                            float: left;  
+                            */
+                        }
+                        ul.icons span.ui-icon {
+                            margin: 0 4px;
                         }
 		</style>
 	</head>
 	<body>
-            <a href="index.html">Back to JQuery Debacles</a>
+        <a href="index.html">Back to JQuery Debacles</a>
 	<h1>Enroll Students</h1>
         <div>
             <ul id="students">
                 <li class="horizontal">Interested Students
                     <ol id="availableStudents">
-                        <li class="bunghole">Foo Bam</li>
-                        <li class="bunghole">Gorgon</li>
-                        <li class="bunghole">Bookaka</li>
+                        <li>Foo Bam</li>
+                        <li>Gorgon</li>
+                        <li>Bookaka</li>
+                    </ol>
+                </li>
+                <li class="horizontal">Enroll These Students
+                    <ol id="enrolledStudents">
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+	<h1>Enroll Students (With Plus/Minus Icons)</h1>
+        <div>
+            <ul>
+                <li class="horizontal">Interested Students
+                    <ol id="availableStudents">
+                        <li class="ui-state-default ui-corner-all" title=".ui-icon-circle-minus">
+                        <li class="ui-state-default ui-corner-all" title=".ui-icon-circle-close"><span class="ui-icon ui-icon-circle-close"></span></li>
+                        <li>Foo Bam</li>
+                        <li>Gorgon</li>
+                        <li>Bookaka</li>
                     </ol>
                 </li>
                 <li class="horizontal">Enroll These Students
