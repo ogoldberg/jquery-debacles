@@ -17,6 +17,21 @@
                                     }
                                     );
 
+                                $('.addButtonIconExample').toggle(function() {
+                                        $(this).parent('tr').appendTo('#enrolledStudentsIconExample');
+                                        var btn = $(this).find('span');
+                                        btn.toggleClass('ui-icon-plus');
+                                        btn.toggleClass('ui-icon-minus');
+                                        $(this).find('div').attr('title', 'Un-enroll this student');
+                                    },
+                                    function() {
+                                        $(this).parent('tr').appendTo('#availableStudentsIconExample');
+                                        var btn = $(this).find('span');
+                                        btn.toggleClass('ui-icon-plus');
+                                        btn.toggleClass('ui-icon-minus');
+                                        $(this).find('div').attr('title', 'Enroll this student');
+                                    }
+                                );
 
 			});
 		</script>
@@ -47,7 +62,7 @@
 	<body>
         <a href="index.html">Back to JQuery Debacles</a>
 	<h1>Enroll Students</h1>
-        <p>Click on the students to move them back & forth between the lists</p>
+        <p>Click on the students to move them back &amp; forth between the lists</p>
         <div>
             <ul id="students">
                 <li class="horizontal">Interested Students
@@ -73,24 +88,34 @@
         <br />
         <br />
         <br />
-	<h1>Enroll Students (With Plus/Minus Icons)</h1>
-        <div>
-            <ul>
-                <li class="horizontal">Interested Students
-                    <ol id="availableStudents">
-                        <li class="ui-state-default ui-corner-all" title=".ui-icon-circle-minus">
-                        <li class="ui-state-default ui-corner-all" title=".ui-icon-circle-close"><span class="ui-icon ui-icon-circle-close"></span></li>
-                        <li>Foo Bam</li>
-                        <li>Gorgon</li>
-                        <li>Bookaka</li>
-                    </ol>
-                </li>
-                <li class="horizontal">Enroll These Students
-                    <ol id="enrolledStudents">
-                    </ol>
-                </li>
-            </ul>
-        </div>
+        <h1>Enroll Students (With Plus/Minus Icons)</h1>
+        <table style="float:left;" id="availableStudentsIconExample">
+            <caption>Available</caption>
+            <tr>
+                <td>Foo Man Chu</td>
+                <td class="addButtonIconExample" ><div class="ui-state-default ui-corner-all" title="Enroll this Student"><span class="ui-icon ui-icon-plus"></span></div></td>
+            </tr>
+            <tr>
+                <td>Telly Savales</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student">
+                        <span class="ui-icon ui-icon-plus"></span>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+            </tr>
+            <tr>
+                <td>Dick Van Dyke</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+            </tr>
+        </table>
+        <table style="float:right;" id="enrolledStudentsIconExample">
+            <caption>Enrolled</caption>
+        </table>
     </body>
 </html>
 
