@@ -57,6 +57,12 @@
                         ul.icons span.ui-icon {
                             margin: 0 4px;
                         }
+
+                        col.student-name-column {
+                            width : 40px;
+                        }
+
+                        
 		</style>
 	</head>
 	<body>
@@ -84,37 +90,86 @@
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <h1>Enroll Students (With Plus/Minus Icons)</h1>
         <table style="float:left;" id="availableStudentsIconExample">
             <caption>Available</caption>
+            <colgroup>
+                <col width="400px;" />
+                <col />
+                <col width="20px;"/>
+            </colgroup>
+            <tbody style="min-height:50px; width:100%; overflow-y:auto; overflow-x:hidden;">
             <tr>
                 <td>Foo Man Chu</td>
+
                 <td class="addButtonIconExample" ><div class="ui-state-default ui-corner-all" title="Enroll this Student"><span class="ui-icon ui-icon-plus"></span></div></td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>Telly Savales</td>
-                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                <td class="addButtonIconExample">
+                    <div class="ui-state-default ui-corner-all" 
                         title="Enroll this Student">
                         <span class="ui-icon ui-icon-plus"></span>
-                </div>
+                    </div>
                 </td>
+                <td>&nbsp;</td>
+
             </tr>
             <tr>
                 <td>Telly from Sesame Street</td>
                 <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
                         title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>Dick Van Dyke</td>
                 <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
             </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
+            </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
+            </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
+            </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
+            </tr>
+                <tr>
+                <td>Telly from Sesame Street</td>
+                <td class="addButtonIconExample"><div class="ui-state-default ui-corner-all" 
+                        title="Enroll this Student"><span class="ui-icon ui-icon-plus "></span></div></td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
         </table>
         <table style="float:right;" id="enrolledStudentsIconExample">
             <caption>Enrolled</caption>
+            <colgroup>
+                <col width="190px" />
+                <col class="student-select-button" />
+            </colgroup>
         </table>
     </body>
 </html>
