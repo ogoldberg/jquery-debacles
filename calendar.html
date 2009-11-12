@@ -18,6 +18,14 @@
                       });
                   }
               });
+
+
+              $('.ovulationDate').datepicker({
+                    showOn: 'button',
+                    buttonImage: 'images/calendar.gif',
+                    buttonImageOnly: true
+              });
+
       });
 
   </script></head>
@@ -30,12 +38,21 @@
     script is somewhat described here: <a href="http://www.kelvinluck.com/assets/jquery/datePicker/v2/demo/">http://www.kelvinluck.com/assets/jquery/datePicker/v2/demo/</a>
   
 <div type="text" id="datepicker"></div>
-<div><label for="classDate1">First Class</label><input type="text"  class="classDate"  name="classDate"  id="classDate" /></div>
+<div><label for="classDate1">First Class</label><input type="text"  class="classDate" name="classDate1" id="classDate1" /></div>
 <div><label for="classDate2">Second Class</label><input type="text" class="classDate" name="classDate2" id="classDate2" /></div>
 <div><label for="classDate3">Third Class</label><input type="text"  class="classDate" name="classDate3" id="classDate3" /></div>
 <div><label for="classDate4">Fourth Class</label><input type="text" class="classDate" name="classDate4" id="classDate4" /></div>
 <div><label for="classDate5">Fifth Class</label><input type="text"  class="classDate" name="classDate5" id="classDate5" /></div>
 
+<h2>Each date has its own icon</h2>
+<div>
+<div><label for="classDate1">First Ovulation</label><input type="text"  class="ovulationDate"  name="ovulationDate1"  id="ovulationDate1" /></div>
+<div><label for="classDate2">Second Ovulation</label><input type="text" class="ovulationDate"  name="ovulationDate2" id="ovulationDate2" /></div>
+<div><label for="classDate3">Third Ovulation</label><input type="text"  class="ovulationDate"  name="ovulationDate3" id="ovulationDate3" /></div>
+<div><label for="classDate4">Fourth Ovulation</label><input type="text" class="ovulationDate"  name="ovulationDate4" id="ovulationDate4" /></div>
+<div><label for="classDate5">Fifth Ovulation</label><input type="text"  class="ovulationDate"  name="ovulationDate5" id="ovulationDate5" /></div>
+
+</div>
 </body>
 </html>
 
