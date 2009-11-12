@@ -8,10 +8,12 @@
   <script type="text/javascript">
       $(document).ready(function(){
               $('#datepicker').datepicker({
-                onSelect: function(dateText, inst) { 
+                  onSelect: function(dateText, inst) { 
                       $('#someDate').val(dateText);
-                      $('.someDate').val(dateText);
-                      }
+                      $('.someDate').each(function(i) {
+                          $(this).val(i);
+                      });
+                  }
               });
       });
 
