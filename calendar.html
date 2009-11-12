@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" href="http://jqueryui.com/latest/themes/base/ui.all.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/ui/ui.core.js"></script>
+  <script type="text/javascript" src="js/ui/ui.datepicker.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+              $('#datepicker').datepicker({
+                onSelect: function(dateText, inst) { 
+                      $('#someDate').val(dateText);
+                          }
+              });
+              });
+
+  </script></head>
+<body style="font-size:62.5%;">
+  
+<div type="text" id="datepicker"></div>
+<input type="text" name="someDate" class="someDate" id="someDate" />
+<input type="text" name="someDate2" class="someDate" />
+<input type="text" name="someDate3" class="someDate" />
+<input type="text" name="someDate4" class="someDate" />
+<input type="text" name="someDate5" class="someDate" />
+
+</body>
+</html>
+
